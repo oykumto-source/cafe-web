@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oykumto — Coffee & bakery</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <meta name="description" content="A neighbourhood cafe with small-batch coffee and fresh bakes every morning.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <script src="js/nav.js" defer></script>
+  <script src="js/newsletter.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="logo" href="index.html">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#2E5A47" stroke-width="2" aria-hidden="true">
+          <path d="M6 13h16v6a7 7 0 0 1-7 7h-2a7 7 0 0 1-7-7z"/>
+          <path d="M22 15h2a3 3 0 0 1 0 6h-2"/>
+          <path d="M11 4c-1 2 1 3 0 5M16 4c-1 2 1 3 0 5"/>
+        </svg>
+        Oykumto Coffee 
+      </a>
+
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D2622" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+
+      <ul class="nav__links" id="nav-links">
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="#about">Our story</a></li>
+        <li><a href="#visit">Visit</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a class="btn btn--primary btn--sm" href="#">Order ahead</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container split">
+      <div class="stack">
+        <p class="badge">Open today · 7:00 – 18:00</p>
+        <h1 class="hero__title">Slow coffee,<br>warm bread,<br>good mornings.</h1>
+        <p class="lead">A neighbourhood cafe roasting small batches and baking everything in-house, every single morning.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="menu.html">See the menu</a>
+          <a class="btn btn--outline" href="#visit">Find us</a>
+        </div>
+      </div>
+      <div class="hero__media">
+        <div class="photo-placeholder">Hero photo goes here</div>
+      </div>
+    </section>
+      <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-logo">Oykumto Coffee</span>
+          <p>Coffee, bread and a corner table.</p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h3>Explore</h3>
+            <a href="menu.html">Menu</a>
+            <a href="index.html#about">Our story</a>
+            <a href="index.html#events">Events</a>
+          </div>
+          <div class="footer-col">
+            <h3>Follow</h3>
+            <a href="https://instagram.com">Instagram</a>
+            <a href="https://tiktok.com">TikTok</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-meta">
+        <span>© 2026 Oykumto Coffee</span>
+        <span>Privacy · Imprint</span>
+      </div>
+    </div>
+  </footer>
+
+        <!-- HIGHLIGHTS BAND -->
+    <section class="band" aria-label="Highlights">
+      <ul class="container band__list">
+        <li>Roasted in-house</li>
+        <li>Baked every morning</li>
+        <li>Oat milk, no extra charge</li>
+        <li>Dogs welcome</li>
+      </ul>
+    </section>
+
+    <!-- OUR STORY -->
+    <section id="about" class="section container split">
+      <div class="photo-placeholder photo-placeholder--story">Interior photo goes here</div>
+      <div class="stack">
+        <p class="eyebrow">Our story</p>
+        <h2 class="section-title">A corner table for everyone on the street.</h2>
+        <p class="body-lg">[Your story: who started the cafe, when, and why.]</p>
+        <p class="body-lg">[What makes you different: beans, baking, what regulars order.]</p>
+        <a class="text-link" href="#visit">Come say hello →</a>
+      </div>
+    </section>
+
+       <section class="section section--surface" aria-labelledby="fav-title">
+<!-- A new horizontal slice of the page.
+     class="section"          → gets top/bottom padding (from layout.css)
+     class="section--surface" → gets the lighter background + thin lines
+     aria-labelledby          → tells screen readers "this section is named by the
+                                 element with id fav-title" (the h2 below)          -->
+
+  <div class="container">
+  <!-- Keeps content max 1200px wide and centred, with side padding. -->
+
+    <div class="section-head">
+    <!-- A row holding the title on the left and the link on the right. -->
+
+      <div>
+      <!-- Groups the small label + big title so they stay together on the left. -->
+
+        <p class="eyebrow">House favourites</p>
+        <!-- Small green UPPERCASE label above the title. -->
+
+        <h2 class="section-title" id="fav-title">What regulars order</h2>
+        <!-- The section's heading. h2 = second-level heading (h1 is the hero title).
+             id="fav-title" is a unique name; the section's aria-labelledby points here. -->
+      </div>
+
+      <a class="text-link" href="menu.html">Full menu →</a>
+      <!-- A link to the menu page, styled green and bold. -->
+    </div>
+
+    <div class="card-grid">
+    <!-- The container that arranges the cards in columns. -->
+
+      <article class="product-card">
+      <!-- One card. <article> = "a self-contained item". -->
+
+        <div class="product-card__img"></div>
+        <!-- Empty box standing in for the photo. Later: an <img>. -->
+
+        <div class="product-card__body">
+        <!-- Everything below the photo, with padding around it. -->
+
+          <div class="product-card__top">
+          <!-- One row: name on the left, price on the right. -->
+
+            <h3>Cinnamon roll</h3>
+            <!-- Item name. h3 = third-level heading, under the section's h2. -->
+
+            <span class="price">€3.00</span>
+            <!-- <span> = a small inline piece of text. Class makes it green + bold. -->
+          </div>
+
+          <p>Made by me, with love!</p>
+          <!-- Description, in a paragraph. -->
+        </div>
+      </article>
+       <article class="product-card">
+      <!-- One card. <article> = "a self-contained item". -->
+
+        <div class="product-card__img"></div>
+        <!-- Empty box standing in for the photo. Later: an <img>. -->
+
+        <div class="product-card__body">
+        <!-- Everything below the photo, with padding around it. -->
+
+          <div class="product-card__top">
+          <!-- One row: name on the left, price on the right. -->
+
+            <h3>Carrot Cake</h3>
+            <!-- Item name. h3 = third-level heading, under the section's h2. -->
+
+            <span class="price">€5.00</span>
+            <!-- <span> = a small inline piece of text. Class makes it green + bold. -->
+          </div>
+
+          <p>Made by me, with love!</p>
+          <!-- Description, in a paragraph. -->
+        </div>
+      </article> <article class="product-card">
+      <!-- One card. <article> = "a self-contained item". -->
+
+        <div class="product-card__img"></div>
+        <!-- Empty box standing in for the photo. Later: an <img>. -->
+
+        <div class="product-card__body">
+        <!-- Everything below the photo, with padding around it. -->
+
+          <div class="product-card__top">
+          <!-- One row: name on the left, price on the right. -->
+
+            <h3>Apple pie</h3>
+            <!-- Item name. h3 = third-level heading, under the section's h2. -->
+
+            <span class="price">€6.00</span>
+            <!-- <span> = a small inline piece of text. Class makes it green + bold. -->
+          </div>
+
+          <p>Made by me, with love!</p>
+          <!-- Description, in a paragraph. -->
+        </div>
+      </article> <article class="product-card">
+      <!-- One card. <article> = "a self-contained item". -->
+
+        <div class="product-card__img"></div>
+        <!-- Empty box standing in for the photo. Later: an <img>. -->
+
+        <div class="product-card__body">
+        <!-- Everything below the photo, with padding around it. -->
+
+          <div class="product-card__top">
+          <!-- One row: name on the left, price on the right. -->
+
+            <h3>Oat Porridge</h3>
+            <!-- Item name. h3 = third-level heading, under the section's h2. -->
+
+            <span class="price">€4.00</span>
+            <!-- <span> = a small inline piece of text. Class makes it green + bold. -->
+          </div>
+
+          <p>Made by me, with love!</p>
+          <!-- Description, in a paragraph. -->
+        </div>
+      </article>
+      <!-- …the other three cards are the same structure with different text. -->
+
+    </div>
+  </div>
+</section>
+        <!-- VISIT -->
+    <section id="visit" class="section container split split--map">
+
+      <div class="stack">
+        <p class="eyebrow">Visit</p>
+        <h2 class="section-title">Join us!</h2>
+
+        <div class="info-block">
+          <h3 class="info-label">Address</h3>
+          <address>Bakery Street<br>2468,Torino</address>
+          <a class="text-link" href="https://maps.google.com/?q=[your+address]">Get directions →</a>
+        </div>
+
+        <div class="info-block">
+          <h3 class="info-label">Opening hours</h3>
+          <dl class="hours">
+            <div><dt>Mon – Fri</dt><dd>7:00 – 18:00</dd></div>
+            <div><dt>Saturday</dt><dd>8:00 – 17:00</dd></div>
+            <div><dt>Sunday</dt><dd>9:00 – 15:00</dd></div>
+          </dl>
+        </div>
+
+        <div class="info-block">
+          <h3 class="info-label">Contact</h3>
+          <p><a href="tel:+390000000000">345678</a> · <a href="mailto:hello@example.com">korpekayao@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div class="map">Map goes here</div>
+
+    </section>
+
+       <!-- NEWSLETTER -->
+    <section id="events" class="container newsletter-wrap" aria-labelledby="news-title">
+      <div class="newsletter">
+        <div class="stack">
+          <h2 class="newsletter__title" id="news-title">New bakes &amp; cupping nights, once a month.</h2>
+          <p>No spam. Just what's coming out of the oven.</p>
+        </div>
+
+        <form class="newsletter__form" novalidate>
+          <label for="email" class="visually-hidden">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+          <button class="btn btn--dark" type="submit">Subscribe</button>
+          <p class="form-msg" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
